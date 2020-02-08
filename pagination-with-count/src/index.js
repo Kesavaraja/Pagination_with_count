@@ -12,7 +12,7 @@ class Pagination extends React.Component {
     }
 
     onValueChanged(e) {
-        if ([e.target.name] == "pageNumber")
+        if ([e.target.name] === "pageNumber")
             this.props.onValueChanged(e.target.name, e.target.id);
         else {
             this.props.onValueChanged("pageNumber", "1"); 
@@ -86,6 +86,10 @@ class Pagination extends React.Component {
                 </div>
             </div>
         )
+    }
+
+    componentDidMount() {
+        console.log("Hello")
     }
 }
 
