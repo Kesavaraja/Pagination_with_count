@@ -1,0 +1,14 @@
+{
+    "name": "pagination-with-count",
+    "version": "0.1.3",
+    "description": "",
+    "license": "MIT",
+    "repository": "Pagination_with_count",
+    "main": "index.js",
+    "keywords": [
+        "pagination",
+        "count",
+        "package",
+        "pagination-with-count"
+    ]
+}
