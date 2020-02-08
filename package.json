@@ -10,5 +10,8 @@
         "count",
         "package",
         "pagination-with-count"
-    ]
+    ],
+    "dependencies": {
+        "react": "^16.12.0"
+    }
 }
