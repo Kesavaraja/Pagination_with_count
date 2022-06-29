@@ -1,5 +1,5 @@
 
-body {padding-top: 0px;font-family:'Montserrat', sans-serif;background: url(../image/bg-image.jpg) no-repeat fixed;background-size: cover;width:100%; height:100%;}
+body {padding-top: 0px;font-family:'Montserrat', sans-serif;}
 
 .img-circle{border-radius:50%;}
 .TopNavigation .nav-item i{font-size: 20px;position: relative;top: 9px;color: #737171 !important;}
@@ -211,7 +211,7 @@ label{font-size:12px;text-transform:uppercase;font-weight:600;margin-bottom: 5px
 .ListRuleLeft input{border: none;font-size:12px;font-weight:600;border-radius:none ;    line-height: 24px;box-shadow: none;}
  .ListRuleLeft .form-control {border-radius: 0rem;box-shadow:none;}
 .ListRuleLeft .InputVehicleId input{line-height: 26px;font-weight: 500;box-shadow:none;}
-.ListRuleLeft select{border:none;font-size:12px;font-weight:500;    background: url(../image/select-arrow.png) no-repeat right #FFF;-webkit-appearance: none;box-shadow:none;}
+.ListRuleLeft select{border:none;font-size:12px;font-weight:500;  -webkit-appearance: none;box-shadow:none;}
 .ListRuleLeft .SeachButton {text-align: center;font-size: 15px;font-weight: 600;color: #fff;line-height: 26px;background: #00699F;text-transform: uppercase;padding: 6px 12px;}
 .ListRuleLeftSmall input {vertical-align:middle;}
 .ListRuleLeftSmall .ReportLeftSmallContent{background: #ededed;padding:10px 0px;display:table; width:100%;padding-left:10px;padding-right:10px;}
@@ -240,7 +240,6 @@ label{font-size:12px;text-transform:uppercase;font-weight:600;margin-bottom: 5px
 .EditSectionRules .SeachButton {padding: 8px 12px;background:#E7505A;}
  .EditSectionRules .EditSectionSecondSelect{float:left;width:22%;list-style:none;padding-right:20px;}
 .EditSectionRules label span{font-size:11px;font-weight:400; }
-.EditSectionRules select{    background: url(../image/select-arrow.png) no-repeat right #FFF;-webkit-appearance: none;}
 .EditSectionRules #sel1 { padding:10px;border:none;outline:none;box-shadow:none;  }
 .EditSectionRules .form-control{box-shadow:none;border:none;otline:none;}
 

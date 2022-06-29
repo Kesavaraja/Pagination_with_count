@@ -4,7 +4,7 @@
     "description": "Pagination component with count selection.",
     "license": "MIT",
     "repository": "kesavaraja/Pagination_with_count",
-    "main": "index.js",
+    "main": "src/index.js",
     "keywords": [
         "pagination",
         "count",
@@ -12,11 +12,14 @@
         "pagination-with-count"
     ],
     "dependencies": {
-        "react": "^16.12.0",
-        "react-scripts": "2.1.8"
+        "bootstrap": "^3.4.1",
+        "jquery": "^3.4.1",
+        "react": "18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "^5.0.1"
     },
     "scripts": {
-        "start": "PORT=8080 react-scripts start",
+        "start": "cross-env PORT=8080 react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
