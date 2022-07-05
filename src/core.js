@@ -54,17 +54,15 @@ function Core(_props) {
     var endResult = endRowCalc(props)
     return (
         <div className="bottom">
-            <div className="dataTables_info" id="datatable_info" role="status" aria-live="polite">Showing {startResult ? startResult : 0} to {endResult ? endResult : 0} of {props.totalCount ? props.totalCount : 0} entries</div>
+            <div className="dataTables_info" id="datatable_info" role="status" aria-live="polite">                {props.displayText.currentDisplayingText} {startResult ? startResult : 0}                 {props.displayText.currentToText} {endResult ? endResult : 0}                 {props.displayText.currentOfText} {props.totalCount ? props.totalCount : 0}                 {props.displayText.currentEntriesText}</div>
             <div className="dataTables_length" id="datatable_length">
                 <label>
-                    Show
+                    {props.displayText.expectedDisplayText}
                     <select aria-controls="datatable" name="countPerPage" value={props.countPerPage} className="form-control input-sm" onChange={onValueChanged}>
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="50">50</option>
-                        <option value="100">100</option>
+                        {props.countOption.map(item => <option value={item}>{item}</option>)}
+
                     </select>
-                    entries
+                    {props.displayText.expectedEntriesText}
                 </label>
             </div>
             <div className="dataTables_paginate paging_simple_numbers" id="datatable_paginate">

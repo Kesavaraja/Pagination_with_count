@@ -8,7 +8,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
 // Initial render
-root.render(<App name="Saeloun blog" />);
+root.render(<App />);
 
 // During an update, there is no need to pass the container again
-root.render(<App name="Saeloun testimonials" />);
+root.render(<App />);
