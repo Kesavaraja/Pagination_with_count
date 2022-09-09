@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import react, { useState } from 'react'
 
 import { styles, defaultDisplayText, defaultCount, validArray } from './assets/constants'
 import Pagination from './core'

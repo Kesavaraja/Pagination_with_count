@@ -1,6 +1,6 @@
 {
     "name": "pagination-with-count",
-    "version": "0.1.15",
+    "version": "0.1.17",
     "description": "Pagination component with count selection.",
     "license": "MIT",
     "repository": "kesavaraja/Pagination_with_count",
@@ -29,6 +29,7 @@
         "not op_mini all"
     ],
     "devDependencies": {
-        "cross-env": "^6.0.3"
+        "cross-env": "^6.0.3",
+        "eslint": "^8.23.0"
     }
 }
