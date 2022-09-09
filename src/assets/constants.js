@@ -3,12 +3,15 @@ export const defaultDisplayText = {
     currentToText: "to",
     currentOfText: "of",
     currentEntriesText: "entries",
-    expectedDisplayText: "Display",
-    expectedEntriesText: "entries"
+    expectedDisplayText: "Display ",
+    expectedEntriesText: " entries"
 }
 
 export const styles = {
-
+    containerClass: "",
+    bgColor:"",
+    buttonBgColor:"Grey",
+    textColor:"Blue"
 }
 
 export const defaultCount = [10, 20, 50, 100]

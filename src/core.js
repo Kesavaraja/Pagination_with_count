@@ -53,9 +53,9 @@ function Core(_props) {
     var startResult = startCalc(props)
     var endResult = endRowCalc(props)
     return (
-        <div className="bottom">
-            <div className="dataTables_info" id="datatable_info" role="status" aria-live="polite">                {props.displayText.currentDisplayingText} {startResult ? startResult : 0}                 {props.displayText.currentToText} {endResult ? endResult : 0}                 {props.displayText.currentOfText} {props.totalCount ? props.totalCount : 0}                 {props.displayText.currentEntriesText}</div>
-            <div className="dataTables_length" id="datatable_length">
+        <div className={props.customStyles}>
+            <div className="column" id="datatable_info" role="status" aria-live="polite">                {props.displayText.currentDisplayingText} {startResult ? startResult : 0}                 {props.displayText.currentToText} {endResult ? endResult : 0}                 {props.displayText.currentOfText} {props.totalCount ? props.totalCount : 0}                 {props.displayText.currentEntriesText}</div>
+            <div className="column" id="datatable_length">
                 <label>
                     {props.displayText.expectedDisplayText}
                     <select aria-controls="datatable" name="countPerPage" value={props.countPerPage} className="form-control input-sm" onChange={onValueChanged}>
@@ -65,7 +65,7 @@ function Core(_props) {
                     {props.displayText.expectedEntriesText}
                 </label>
             </div>
-            <div className="dataTables_paginate paging_simple_numbers" id="datatable_paginate">
+            <div className="column" id="datatable_paginate">
                 <ul className="pagination">
                     <span>
                         {pages}

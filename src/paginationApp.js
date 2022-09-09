@@ -4,16 +4,18 @@ import { styles, defaultDisplayText, defaultCount, validArray } from './assets/c
 import Pagination from './core'
 
 function PaginationApp(props) {
-    const [totalCount, setTotalCount] = useState(props.totalCount ? props.totalCount : 10)
+    const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    const [totalCount, setTotalCount] = useState(props.totalCount ? props.totalCount : 100)
     const [pageNumber, setPageNumber] = useState(props.pageNumber ? props.pageNumber : 1)
     const [countPerPage, setCountPerPage] = useState(props.countPerPage ? props.countPerPage : 10)
-    const [styles, setStyles] = useState(/* 
-        styles.theme = props.style ? 
-            styles.containerClass = props.style ?
-                styles.bgColor = props.style ?
-                    styles.buttonBgColor = props.style ?
-                        styles.textColor = props.style ? */
-    )
+    const [customStyles, setCustomStyles] = useState(
+        {theme : props.style && props.style.theme ? props.style.theme :  getCurrentTheme(),
+            containerClass : props.style && props.style.containerClass ? props.style.containerClass : styles.containerClass,
+                bgColor : props.style && props.style.bgColor ?props.style.bgColor :styles. bgColor,
+                    buttonBgColor : props.style && props.style.buttonBgColor ?props.style.buttonBgColor : styles.buttonBgColor,
+                        textColor : props.style && props.style.textColor?props.style.textColor : styles.textColor
+        })
 
     const [countOptions, setCountOptions] = useState(
         validArray(props.countOptions) ? props.countOptions : defaultCount
@@ -42,8 +44,8 @@ function PaginationApp(props) {
 
     return (
         <div className={"row"} >
-            <div id="pagination_counter" className="dataTables_wrapper form-inline dt-bootstrap no-footer">
-                <Pagination totalCount={totalCount} onValueChanged={onPageChanged} countOption={countOptions} styles={styles} displayText={textContent} pageNumber={pageNumber} countPerPage={countPerPage} />
+            <div id="pagination_counter" className={customStyles.containerClass}>
+                <Pagination totalCount={totalCount} onValueChanged={onPageChanged} customStyles={customStyles} countOption={countOptions} styles={styles} displayText={textContent} pageNumber={pageNumber} countPerPage={countPerPage} />
             </div>
         </div>
     );
