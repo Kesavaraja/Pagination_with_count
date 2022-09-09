@@ -1,6 +1,6 @@
 {
     "name": "pagination-with-count",
-    "version": "0.1.21",
+    "version": "0.1.22",
     "description": "Pagination component with count selection.",
     "license": "MIT",
     "repository": "kesavaraja/Pagination_with_count",
@@ -34,6 +34,7 @@
         "@babel/cli": "^7.18.10",
         "@babel/core": "^7.19.0",
         "@babel/preset-env": "^7.19.0",
+        "@babel/preset-react": "^7.18.6",
         "cross-env": "^6.0.3",
         "eslint": "^8.23.0"
     }

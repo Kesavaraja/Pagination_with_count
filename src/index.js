@@ -3,9 +3,13 @@ import ReactDOM from 'react-dom/client';
 import PaginationApp from './lib/components/paginationApp.js';
 import * as style from './assets/styles.css';
 
-ReactDOM.render(
-    <React.StrictMode>
-      <PaginationApp />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+const container = document.getElementById('root');
+
+// Create a root.
+const root = ReactDOM.createRoot(container);
+
+// Initial render
+root.render(<PaginationApp />);
+
+// During an update, there is no need to pass the container again
+root.render(<PaginationApp />);
