@@ -1,6 +1,6 @@
 import react from 'react';
 import ReactDOM from 'react-dom/client';
-import PaginationApp from './paginationApp.js';
+import PaginationApp from './lib/components/paginationApp.js';
 import * as style from './assets/styles.css';
 
 const container = document.getElementById('root');
