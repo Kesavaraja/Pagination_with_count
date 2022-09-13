@@ -1,10 +1,10 @@
 {
     "name": "pagination-with-count",
-    "version": "0.1.22",
+    "version": "0.1.30",
     "description": "Pagination component with count selection.",
     "license": "MIT",
     "repository": "kesavaraja/Pagination_with_count",
-    "main": "src/index.js",
+    "main": "dist/index.js",
     "keywords": [
         "pagination",
         "count",

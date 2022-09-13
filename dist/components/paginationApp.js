@@ -9,9 +9,9 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-var _constants = require("../../assets/constants");
+var _constants = require("../constants");
 
-var _core = _interopRequireDefault(require("./core"));
+var _Core = _interopRequireDefault(require("./Core"));
 
 var _jsxRuntime = require("react/jsx-runtime");
 
@@ -90,7 +90,7 @@ function PaginationApp(props) {
     children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       id: "pagination_counter",
       className: customStyles.containerClass,
-      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_core.default, {
+      children: /*#__PURE__*/(0, _jsxRuntime.jsx)(_Core.default, {
         totalCount: totalCount,
         onValueChanged: onPageChanged,
         customStyles: customStyles,
