@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "::set-output name=date::$(date +'%Y-%m-%dT%H:%M:%S')"
       - name: Create Release
         uses: actions/create-release@v1
         env:
