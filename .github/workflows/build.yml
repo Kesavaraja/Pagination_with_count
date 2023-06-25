@@ -34,8 +34,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: ${{ github.event.repository.updated_at}}
-          release_name: Release ${{ github.event.repository.updated_at}}
+          tag_name: ${{ steps.version.outputs.builddate }}
+          release_name: ${{ steps.version.outputs.builddate }}
           body: |
             This is the release notes for ${{ github.ref }}.
             You can add multiple lines here.
