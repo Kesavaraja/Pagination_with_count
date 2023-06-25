@@ -1,5 +1,4 @@
-import react, { useState } from 'react'
-
+import { useState } from 'react'
 import { styles, defaultDisplayText, defaultCount, validArray } from '../constants'
 import Pagination from './Core'
 
@@ -10,11 +9,12 @@ function PaginationApp(props) {
     const [pageNumber, setPageNumber] = useState(props.pageNumber ? props.pageNumber : 1)
     const [countPerPage, setCountPerPage] = useState(props.countPerPage ? props.countPerPage : 10)
     const [customStyles, setCustomStyles] = useState(
-        {theme : props.style && props.style.theme ? props.style.theme :  getCurrentTheme(),
-            containerClass : props.style && props.style.containerClass ? props.style.containerClass : styles.containerClass,
-                bgColor : props.style && props.style.bgColor ?props.style.bgColor :styles. bgColor,
-                    buttonBgColor : props.style && props.style.buttonBgColor ?props.style.buttonBgColor : styles.buttonBgColor,
-                        textColor : props.style && props.style.textColor?props.style.textColor : styles.textColor
+        {
+            theme: props.style && props.style.theme ? props.style.theme : getCurrentTheme(),
+            containerClass: props.style && props.style.containerClass ? props.style.containerClass : styles.containerClass,
+            bgColor: props.style && props.style.bgColor ? props.style.bgColor : styles.bgColor,
+            buttonBgColor: props.style && props.style.buttonBgColor ? props.style.buttonBgColor : styles.buttonBgColor,
+            textColor: props.style && props.style.textColor ? props.style.textColor : styles.textColor
         })
 
     const [countOptions, setCountOptions] = useState(
@@ -23,7 +23,6 @@ function PaginationApp(props) {
 
 
     const [textContent, setTextContent] = useState({
-
         currentDisplayingText: props.textContent && props.textContent.currentDisplayingText ? props.textContent.currentDisplayingText : defaultDisplayText.currentDisplayingText,
         currentToText: props.textContent && props.textContent.currentToText ? props.textContent.currentToText : defaultDisplayText.currentToText,
         currentOfText: props.textContent && props.textContent.currentOfText ? props.textContent.currentOfText : defaultDisplayText.currentOfText,
