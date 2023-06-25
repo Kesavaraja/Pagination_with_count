@@ -21,7 +21,7 @@ jobs:
     steps:
       - name: "Set current date as env variable"
         run: |
-          echo "builddate=$(date +' %Y-%m-%dT%H:%M:%S')" >> $GITHUB_OUTPUT
+          echo "builddate=$(date +' %Y-%d-%H:%M:%S')" >> $GITHUB_OUTPUT
         id: version  # this is used on variable path
       - uses: actions/checkout@v3
       - name: Use Node.js ${{ matrix.node-version }}
@@ -38,8 +38,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: ${{ github.event.repository.updated_at }}
-          release_name: ${{ github.event.repository.updated_at }}
+          tag_name: ${{ steps.version.outputs.builddate }}
+          release_name: ${{ steps.version.outputs.builddate }}
           body: |
             This is the release notes for ${{ github.ref }}.
             You can add multiple lines here.
