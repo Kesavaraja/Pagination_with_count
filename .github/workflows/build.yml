@@ -38,10 +38,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: ${{ steps.version.outputs.builddate }}
-          release_name: ${{ steps.version.outputs.builddate }}
+          tag_name: ${{ steps.version.outputs.date }}
+          release_name: Release ${{ steps.version.outputs.date }}
           body: |
-            This is the release notes for ${{ github.ref }}.
+            This is the release notes for ${{ steps.version.outputs.date }}.
             You can add multiple lines here.
           draft: false
           prerelease: false
