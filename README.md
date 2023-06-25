@@ -1,3 +1,7 @@
-<a href="https://github.com/Kesavaraja/Pagination_with_count/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Kesavaraja/Pagination_with_count"></a>
+Hello Friends,
 
-<Pagination totalCount={this.state.totalCount} onValueChanged={this.onPageChanged} pageNumber={this.state.pageNumber} countPerPage={this.state.countPerPage} />
+While i am preparing the readme file I have given the sample on how to use the application.
+
+"<Pagination totalCount={this.state.totalCount} onValueChanged={this.onPageChanged} pageNumber={this.state.pageNumber} countPerPage={this.state.countPerPage} />"
+
+More details will be updated shortly.

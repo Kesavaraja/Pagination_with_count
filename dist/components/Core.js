@@ -5,7 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _react = _interopRequireDefault(require("react"));
+
 var _jsxRuntime = require("react/jsx-runtime");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Core(_props) {
   var props = _props;
@@ -143,7 +147,7 @@ function Core(_props) {
             return /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
               value: item,
               children: item
-            });
+            }, item);
           })
         }), props.displayText.expectedEntriesText]
       })

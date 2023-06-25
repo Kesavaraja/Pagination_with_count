@@ -5,6 +5,7 @@
     "license": "MIT",
     "repository": "kesavaraja/Pagination_with_count",
     "main": "dist/index.js",
+    "homepage": "https://github.com/Kesavaraja/Pagination_with_count/#readme",
     "keywords": [
         "pagination",
         "count",
@@ -27,7 +28,7 @@
     "scripts": {
         "start": "cross-env PORT=8080 react-scripts start",
         "lint": "eslint . --max-warnings=0",
-        "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+        "build": "del dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
         "test": "react-scripts test --env=jsdom",
         "eject": "react-scripts eject"
     },

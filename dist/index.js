@@ -16,6 +16,8 @@ Object.defineProperty(exports, "PaginationApp", {
   }
 });
 
+var _react = _interopRequireDefault(require("react"));
+
 var _Core = _interopRequireDefault(require("./components/Core"));
 
 var _PaginationApp = _interopRequireDefault(require("./components/PaginationApp"));
