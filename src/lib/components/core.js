@@ -1,3 +1,4 @@
+import React from "react";
 
 function Core(_props) {
     var props = _props
