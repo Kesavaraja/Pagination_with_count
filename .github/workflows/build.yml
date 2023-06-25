@@ -29,16 +29,13 @@ jobs:
       - run: npm run build
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d-%H:%M:%S')"
       - name: Create Release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
         with:
-          tag_name: ${{ steps.date.outputs.date }}
-          release_name: Release ${{ steps.date.outputs.date }}
+          tag_name: ${{ github.event.repository.updated_at}}
+          release_name: Release ${{ github.event.repository.updated_at}}
           body: |
             This is the release notes for ${{ github.ref }}.
             You can add multiple lines here.
