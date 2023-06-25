@@ -47,7 +47,7 @@ function PaginationApp(props) {
                 <Pagination totalCount={totalCount} onValueChanged={onPageChanged} customStyles={customStyles} countOption={countOptions} styles={styles} displayText={textContent} pageNumber={pageNumber} countPerPage={countPerPage} />
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default PaginationApp

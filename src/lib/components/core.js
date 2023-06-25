@@ -60,7 +60,7 @@ function Core(_props) {
                 <label>
                     {props.displayText.expectedDisplayText}
                     <select aria-controls="datatable" name="countPerPage" value={props.countPerPage} className="form-control input-sm" onChange={onValueChanged}>
-                        {props.countOption.map(item => <option value={item}>{item}</option>)}
+                        {props.countOption.map(item => <option key={item} value={item}>{item}</option>)}
 
                     </select>
                     {props.displayText.expectedEntriesText}
