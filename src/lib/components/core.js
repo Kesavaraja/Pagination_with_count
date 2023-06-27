@@ -54,19 +54,17 @@ function Core(_props) {
     var startResult = startCalc(props)
     var endResult = endRowCalc(props)
     return (
-        <div className={props.customStyles}>
-            <div className="column" id="datatable_info" role="status" aria-live="polite">                {props.displayText.currentDisplayingText} {startResult ? startResult : 0}                 {props.displayText.currentToText} {endResult ? endResult : 0}                 {props.displayText.currentOfText} {props.totalCount ? props.totalCount : 0}                 {props.displayText.currentEntriesText}</div>
-            <div className="column" id="datatable_length">
-                <label>
-                    {props.displayText.expectedDisplayText}
-                    <select aria-controls="datatable" name="countPerPage" value={props.countPerPage} className="form-control input-sm" onChange={onValueChanged}>
-                        {props.countOption.map(item => <option key={item} value={item}>{item}</option>)}
+        <div className={"row"}>
+            <div className="col-4" id="datatable_info" role="status" aria-live="polite">                {props.displayText.currentDisplayingText} {startResult ? startResult : 0}                 {props.displayText.currentToText} {endResult ? endResult : 0}                 {props.displayText.currentOfText} {props.totalCount ? props.totalCount : 0}                 {props.displayText.currentEntriesText}</div>
+            <div className="col-4" id="datatable_length">
+                {props.displayText.expectedDisplayText}
+                <select aria-controls="datatable" name="countPerPage" value={props.countPerPage} className="form-control input-sm" onChange={onValueChanged}>
+                    {props.countOption.map(item => <option key={item} value={item}>{item}</option>)}
 
-                    </select>
-                    {props.displayText.expectedEntriesText}
-                </label>
+                </select>
+                {props.displayText.expectedEntriesText}
             </div>
-            <div className="column" id="datatable_paginate">
+            <div className="col-4" id="datatable_paginate">
                 <ul className="pagination">
                     <span>
                         {pages}
