@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { styles, defaultDisplayText, defaultCount, validArray } from '../constants'
-import Pagination from './core.js'
+import Pagination from './Core.js'
 
 function PaginationComponent(props) {
     const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
