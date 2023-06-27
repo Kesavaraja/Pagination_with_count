@@ -17,6 +17,7 @@ Install package with npm
 
 ## Props
 ```javascript
+
  totalCount  : The maximum length of the total data.
 
  onValueChanged: A function to be triggered when the user changes the page index.
@@ -24,6 +25,7 @@ Install package with npm
  pageNumber: The current page index.
 
  countPerPage: A function to be triggered when the user changes the count of data to be displayed on the current page.
+
 
 ```
 
