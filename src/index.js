@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PaginationComponent from './lib/components/pnpm aginationComponent.js';
+import PaginationComponent from './lib/components/PaginationComponent.js';
 import * as style from './lib/styles.css';
 
 const container = document.getElementById('root');
