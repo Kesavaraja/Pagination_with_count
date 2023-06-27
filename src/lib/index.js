@@ -1,5 +1,5 @@
 import React from 'react';
 import Core from './components/Core';
-import PaginationApp from './components/PaginationApp';
+import PaginationComponent from './components/PaginationComponent';
 
-export { PaginationApp, Core };
+export { PaginationComponent, Core };

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import PaginationApp from './lib/components/PaginationApp.js';
+import PaginationComponent from './lib/components/pnpm aginationComponent.js';
 import * as style from './lib/styles.css';
 
 const container = document.getElementById('root');
@@ -9,8 +9,8 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
 // Initial render
-root.render(<PaginationApp />);
+root.render(<PaginationComponent />);
 
 // During an update, there is no need to pass the container again
-root.render(<PaginationApp />);
-export default PaginationApp;
+root.render(<PaginationComponent />);
+export default PaginationComponent;

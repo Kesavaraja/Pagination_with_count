@@ -29,6 +29,11 @@ Install package with npm
 
 ```
 
+
+## Demo
+
+Link to demo - https://codesandbox.io/s/pagination-with-count-demo-393t5y?file=/src/App.js
+
 ## Usage/Examples
 
 ```javascript
@@ -36,7 +41,7 @@ import Pagination from 'pagination-with-count'
 
 function App() {
   return 
-<Pagination
+<PaginationComponent
   totalCount={this.state.totalCount}
   onValueChanged={this.onPageChanged}
   pageNumber={this.state.pageNumber}

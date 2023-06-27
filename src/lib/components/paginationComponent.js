@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { styles, defaultDisplayText, defaultCount, validArray } from '../constants'
-import Pagination from './Core'
+import Pagination from './core.js'
 
-function PaginationApp(props) {
+function PaginationComponent(props) {
     const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     const [totalCount, setTotalCount] = useState(props.totalCount ? props.totalCount : 100)
@@ -50,4 +50,4 @@ function PaginationApp(props) {
     )
 }
 
-export default PaginationApp
+export default PaginationComponent
