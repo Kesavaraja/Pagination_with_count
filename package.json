@@ -1,6 +1,6 @@
 {
     "name": "pagination-with-count",
-    "version": "0.1.35",
+    "version": "0.1.37",
     "description": "Pagination component with count selection.",
     "license": "MIT",
     "repository": "kesavaraja/Pagination_with_count",
