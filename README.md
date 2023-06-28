@@ -24,20 +24,8 @@ Install package with npm
 | pageNumber | Number | 1 | The active page. |
 | countPerPage | Number | 10 | The number of items per page. |
 | countOptions | Array | [10,20,50,100,200] | The number of pages displayed in the paginator. |
-| styles | Object | {
-    containerClass: "",
-    bgColor: "black",
-    buttonBgColor: "Grey",
-    textColor: "Blue"
-  }; | The styles to be applied for buttons and other texts |
-| textContent | Object | {
-    currentDisplayingText: "Mostrando ",
-    currentToText: "a",
-    currentOfText: "de",
-    currentEntriesText: "entradas",
-    expectedDisplayText: "Mostrar ",
-    expectedEntriesText: " entradas"
-  }; | Text to be displayed instead of Displaying 1 to 10 of 2000 entries. |
+| styles | Object | {containerClass: "",bgColor: "black",buttonBgColor: "Grey",textColor: "Blue"}; | The styles to be applied for buttons and other texts |
+| textContent | Object | {currentDisplayingText: "Mostrando ",currentToText: "a",currentOfText: "de",currentEntriesText: "entradas",expectedDisplayText: "Mostrar",expectedEntriesText: "entradas"}; | Text to be displayed instead of Displaying 1 to 10 of 2000 entries. |
 
 
 ## Demo
