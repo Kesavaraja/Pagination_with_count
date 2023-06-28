@@ -16,18 +16,14 @@ Install package with npm
     
 
 ## Props
-```javascript
 
- totalCount  : The maximum length of the total data.
-
- onValueChanged: A function to be triggered when the user changes the page index.
-
- pageNumber: The current page index.
-
- countPerPage: A function to be triggered when the user changes the count of data to be displayed on the current page.
-
-
-```
+| Name | Type | Default | Description |
+|---|---|---|---|
+| totalItemsCount | Number | Required | The total count of items. |
+| onChange | Function | Required | The page change handler. Receives the page number as an argument. |
+| activePage | Number | 1 | The active page. |
+| itemsCountPerPage | Number | 10 | The number of items per page. |
+| pageRangeDisplayed | Number | 5 | The number of pages displayed in the paginator. |
 
 
 ## Demo
