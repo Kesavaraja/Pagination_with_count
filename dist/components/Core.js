@@ -13,10 +13,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Core(_props) {
   var props = _props;
-  console.log(props);
 
   var onValueChanged = function onValueChanged(e) {
-    if ([e.target.name] === "pageNumber") props.onValueChanged(e.target.name, e.target.id);else {
+    if ([e.target.name] === "pageNumber") props.onValueChanged(e.target.name, e.target.id); else {
       props.onValueChanged("pageNumber", "1");
       props.onValueChanged(e.target.name, e.target.value);
     }
@@ -54,7 +53,7 @@ function Core(_props) {
       "data-dt-idx": "0",
       tabIndex: "0",
       children: "<"
-    }, "1");else pages[1] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+    }, "1"); else pages[1] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
       className: "paginate_button previous",
       "aria-controls": "datatable",
       id: Number(props.pageNumber) - 1,
@@ -76,7 +75,7 @@ function Core(_props) {
         /*  onClick={onValueChanged} */
         ,
         children: i
-      }, i);else if (i != 0) pages[i] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+      }, i); else if (i != 0) pages[i] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
         className: "paginate_button ",
         "aria-controls": "datatable",
         value: i,
@@ -96,7 +95,7 @@ function Core(_props) {
       "data-dt-idx": "3",
       tabIndex: "0",
       children: ">"
-    }, count + 1);else {
+    }, count + 1); else {
       pages[count + 1] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
         className: "paginate_button next",
         id: Number(props.pageNumber) + 1,
