@@ -42,7 +42,7 @@ function PaginationComponent(props) {
     }
 
     return (
-        <div className={"row"} >
+        <div className={"row container-fluid"} >
             <div id="pagination_counter" className={customStyles.containerClass}>
                 <Pagination totalCount={totalCount} onValueChanged={onPageChanged} customStyles={customStyles} countOption={countOptions} styles={styles} displayText={textContent} pageNumber={pageNumber} countPerPage={countPerPage} />
             </div>
