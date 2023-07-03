@@ -32,7 +32,6 @@
 
   #datatable_length {
     display: flex;
-    justify-content: space-between;
   }
 
   #datatable_paginate{
@@ -40,7 +39,6 @@
   }
 
   .paginate_button {
-
     color: #000000;
     float: left;
     padding: 8px 16px;
