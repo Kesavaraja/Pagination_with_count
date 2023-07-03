@@ -56,16 +56,16 @@ function Core(_props) {
     return (
         <div className={"row"}>
             <div className="col-4" id="datatable_info" role="status" aria-live="polite">                {props.displayText.currentDisplayingText} {startResult ? startResult : 0}                 {props.displayText.currentToText} {endResult ? endResult : 0}                 {props.displayText.currentOfText} {props.totalCount ? props.totalCount : 0}                 {props.displayText.currentEntriesText}</div>
-            <div className="col-4" id="datatable_length">
-                {props.displayText.expectedDisplayText}
-                <select aria-controls="datatable" name="countPerPage" value={props.countPerPage} className="form-control input-sm" onChange={onValueChanged}>
+            <div className="col-4 justify-content-center" id="datatable_length">
+                {props.displayText.expectedDisplayText}&nbsp;
+                <select aria-controls="datatable" name="countPerPage" value={props.countPerPage} className=" input-sm" onChange={onValueChanged}>
                     {props.countOption.map(item => <option key={item} value={item}>{item}</option>)}
 
-                </select>
+                </select>&nbsp;
                 {props.displayText.expectedEntriesText}
             </div>
             <div className="col-4" id="datatable_paginate">
-                <ul className="pagination">
+                <ul className="pagination  float-end">
                     <span>
                         {pages}
                     </span>
