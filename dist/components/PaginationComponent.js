@@ -86,7 +86,7 @@ function PaginationComponent(props) {
   };
 
   return /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
-    className: "row",
+    className: "row container-fluid",
     children: /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
       id: "pagination_counter",
       className: customStyles.containerClass,

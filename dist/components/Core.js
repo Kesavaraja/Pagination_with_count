@@ -13,9 +13,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function Core(_props) {
   var props = _props;
+  console.log(props);
 
   var onValueChanged = function onValueChanged(e) {
-    if ([e.target.name] === "pageNumber") props.onValueChanged(e.target.name, e.target.id); else {
+    if ([e.target.name] === "pageNumber") props.onValueChanged(e.target.name, e.target.id);else {
       props.onValueChanged("pageNumber", "1");
       props.onValueChanged(e.target.name, e.target.value);
     }
@@ -53,7 +54,7 @@ function Core(_props) {
       "data-dt-idx": "0",
       tabIndex: "0",
       children: "<"
-    }, "1"); else pages[1] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+    }, "1");else pages[1] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
       className: "paginate_button previous",
       "aria-controls": "datatable",
       id: Number(props.pageNumber) - 1,
@@ -75,7 +76,7 @@ function Core(_props) {
         /*  onClick={onValueChanged} */
         ,
         children: i
-      }, i); else if (i != 0) pages[i] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
+      }, i);else if (i != 0) pages[i] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
         className: "paginate_button ",
         "aria-controls": "datatable",
         value: i,
@@ -95,7 +96,7 @@ function Core(_props) {
       "data-dt-idx": "3",
       tabIndex: "0",
       children: ">"
-    }, count + 1); else {
+    }, count + 1);else {
       pages[count + 1] = /*#__PURE__*/(0, _jsxRuntime.jsx)("a", {
         className: "paginate_button next",
         id: Number(props.pageNumber) + 1,
@@ -125,36 +126,34 @@ function Core(_props) {
   var startResult = startCalc(props);
   var endResult = endRowCalc(props);
   return /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
-    className: props.customStyles,
+    className: "row",
     children: [/*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
-      className: "column",
+      className: "col-4",
       id: "datatable_info",
       role: "status",
       "aria-live": "polite",
       children: ["                ", props.displayText.currentDisplayingText, " ", startResult ? startResult : 0, "                 ", props.displayText.currentToText, " ", endResult ? endResult : 0, "                 ", props.displayText.currentOfText, " ", props.totalCount ? props.totalCount : 0, "                 ", props.displayText.currentEntriesText]
-    }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
-      className: "column",
+    }), /*#__PURE__*/(0, _jsxRuntime.jsxs)("div", {
+      className: "col-4 justify-content-center",
       id: "datatable_length",
-      children: /*#__PURE__*/(0, _jsxRuntime.jsxs)("label", {
-        children: [props.displayText.expectedDisplayText, /*#__PURE__*/(0, _jsxRuntime.jsx)("select", {
-          "aria-controls": "datatable",
-          name: "countPerPage",
-          value: props.countPerPage,
-          className: "form-control input-sm",
-          onChange: onValueChanged,
-          children: props.countOption.map(function (item) {
-            return /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
-              value: item,
-              children: item
-            }, item);
-          })
-        }), props.displayText.expectedEntriesText]
-      })
+      children: [props.displayText.expectedDisplayText, "\xA0", /*#__PURE__*/(0, _jsxRuntime.jsx)("select", {
+        "aria-controls": "datatable",
+        name: "countPerPage",
+        value: props.countPerPage,
+        className: " input-sm",
+        onChange: onValueChanged,
+        children: props.countOption.map(function (item) {
+          return /*#__PURE__*/(0, _jsxRuntime.jsx)("option", {
+            value: item,
+            children: item
+          }, item);
+        })
+      }), "\xA0", props.displayText.expectedEntriesText]
     }), /*#__PURE__*/(0, _jsxRuntime.jsx)("div", {
-      className: "column",
+      className: "col-4",
       id: "datatable_paginate",
       children: /*#__PURE__*/(0, _jsxRuntime.jsx)("ul", {
-        className: "pagination",
+        className: "pagination  float-end",
         children: /*#__PURE__*/(0, _jsxRuntime.jsx)("span", {
           children: pages
         })
